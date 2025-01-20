@@ -1,0 +1,160 @@
+
+header {
+    background-color:#b38693 ;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    margin: 0%;
+    display: flex;
+    justify-content: space-between;
+}
+#Titulo{
+    display: flex;
+    align-items: flex-start;
+   
+}
+i {
+    font-size:  5rem; ;
+    color: bisque;
+
+}
+ul {
+    list-style: none;
+    align-items: flex-end;
+    display: flex;
+    gap: 1rem;
+
+
+}
+main {
+    background-color: bisque ;
+    border: gray double;
+    margin: 0%;
+    
+}
+.section-1  {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Times, 'Times New Roman', serif ;
+    font-size: 20px;   
+    padding:15rem;
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+.acerca-imagen img{
+    width: 400px;
+    height: 500px;
+    
+}
+.section-2 img {
+    width: 100%;
+    height: 1000px;
+    
+} 
+.Menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.Menu img {
+    width:20rem ;
+    height:18rem ;
+    border: #b38693 7px double;
+    margin: 10px;
+    padding: 20opx;
+    border-radius: 30px;
+}
+.Menu p {
+    font-family: "News Cycle", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 20px;
+    font-size: 25px;
+}
+ .Menu nav {
+    color: blue;
+
+ } 
+ #check {
+    display: none;
+ }
+
+   i .checkbtn {
+    font-size: 40px;
+    color:black ;
+    float:right ;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+
+  }
+footer {
+    background-color:#b38693;
+    margin: 0%;
+    padding: 0%;
+    font-size: 2rem;
+    
+}
+@media (max-width:1000px) {  
+    header{
+        background-color:#ffd1c0 ;
+        font-family: "Wittgenstein", serif;
+        font-optical-sizing: auto;
+        font-weight:normal ;
+        font-style: normal;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media (max-width: 1000px)
+ {
+    .section-1{
+        flex-wrap: wrap;
+        background-color:#b386ae ;
+        font-family: "Playwrite BR", serif;
+        font-optical-sizing: auto;
+        font-weight: normal;
+        font-style: normal;
+    }
+}
+
+@media (max-width:1000px) {
+    .Menu {
+        flex-wrap: wrap;
+        
+    }
+    header ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #ffdb99;
+        text-align:center ;
+
+        top: 80px; 
+
+        transition:all 0.5s ;
+        left: -120%;  /* El menú se oculta completamente fuera de la pantalla */
+        transition: left 0.5s ease;  /* Suavizar la animación de la transición */
+
+    }
+    #check:checked ~ ul {
+        left: 0;
+        display: block;
+    }
+    header nav ul li {
+        display: block;
+        margin:50px 0  ;
+        line-height:30px ;
+    }
+    header nav ul li a {
+        font-size: 20px;
+    }
+    
+    #check:checked ~ label.checkbtn i {
+        color: black; /* Cambiar el color del icono cuando se activa el menú */
+    }
+    
+
+    }
+
